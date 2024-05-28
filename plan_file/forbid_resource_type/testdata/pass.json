@@ -1,0 +1,207 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.8.4",
+  "planned_values": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "google_secret_manager_secret.secret-basic",
+          "mode": "managed",
+          "type": "google_secret_manager_secret",
+          "name": "secret-basic",
+          "provider_name": "registry.terraform.io/hashicorp/google",
+          "schema_version": 0,
+          "values": {
+            "annotations": null,
+            "effective_labels": {
+              "label": "my-label"
+            },
+            "labels": {
+              "label": "my-label"
+            },
+            "project": "hello-world",
+            "replication": [
+              {
+                "auto": [
+                  {
+                    "customer_managed_encryption": []
+                  }
+                ],
+                "user_managed": []
+              }
+            ],
+            "rotation": [],
+            "secret_id": "secret-version",
+            "terraform_labels": {
+              "label": "my-label"
+            },
+            "timeouts": null,
+            "topics": [],
+            "ttl": null,
+            "version_aliases": null,
+            "version_destroy_ttl": null
+          },
+          "sensitive_values": {
+            "effective_annotations": {},
+            "effective_labels": {},
+            "labels": {},
+            "replication": [
+              {
+                "auto": [
+                  {
+                    "customer_managed_encryption": []
+                  }
+                ],
+                "user_managed": []
+              }
+            ],
+            "rotation": [],
+            "terraform_labels": {},
+            "topics": []
+          }
+        }
+      ]
+    }
+  },
+  "resource_changes": [
+    {
+      "address": "google_secret_manager_secret.secret-basic",
+      "mode": "managed",
+      "type": "google_secret_manager_secret",
+      "name": "secret-basic",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "annotations": null,
+          "effective_labels": {
+            "label": "my-label"
+          },
+          "labels": {
+            "label": "my-label"
+          },
+          "project": "hello-world",
+          "replication": [
+            {
+              "auto": [
+                {
+                  "customer_managed_encryption": []
+                }
+              ],
+              "user_managed": []
+            }
+          ],
+          "rotation": [],
+          "secret_id": "secret-version",
+          "terraform_labels": {
+            "label": "my-label"
+          },
+          "timeouts": null,
+          "topics": [],
+          "ttl": null,
+          "version_aliases": null,
+          "version_destroy_ttl": null
+        },
+        "after_unknown": {
+          "create_time": true,
+          "effective_annotations": true,
+          "effective_labels": {},
+          "expire_time": true,
+          "id": true,
+          "labels": {},
+          "name": true,
+          "replication": [
+            {
+              "auto": [
+                {
+                  "customer_managed_encryption": []
+                }
+              ],
+              "user_managed": []
+            }
+          ],
+          "rotation": [],
+          "terraform_labels": {},
+          "topics": []
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "effective_annotations": {},
+          "effective_labels": {},
+          "labels": {},
+          "replication": [
+            {
+              "auto": [
+                {
+                  "customer_managed_encryption": []
+                }
+              ],
+              "user_managed": []
+            }
+          ],
+          "rotation": [],
+          "terraform_labels": {},
+          "topics": []
+        }
+      }
+    }
+  ],
+  "configuration": {
+    "provider_config": {
+      "google": {
+        "name": "google",
+        "full_name": "registry.terraform.io/hashicorp/google",
+        "version_constraint": "5.30.0",
+        "expressions": {
+          "project": {
+            "constant_value": "hello-world"
+          }
+        }
+      }
+    },
+    "root_module": {
+      "resources": [
+        {
+          "address": "google_secret_manager_secret.secret-basic",
+          "mode": "managed",
+          "type": "google_secret_manager_secret",
+          "name": "secret-basic",
+          "provider_config_key": "google",
+          "expressions": {
+            "labels": {
+              "constant_value": {
+                "label": "my-label"
+              }
+            },
+            "replication": [
+              {
+                "auto": [
+                  {}
+                ]
+              }
+            ],
+            "secret_id": {
+              "constant_value": "secret-version"
+            }
+          },
+          "schema_version": 0
+        }
+      ]
+    }
+  },
+  "relevant_attributes": [
+    {
+      "resource": "google_secret_manager_secret.secret-basic",
+      "attribute": [
+        "id"
+      ]
+    }
+  ],
+  "timestamp": "2024-05-27T11:34:48Z",
+  "applyable": true,
+  "complete": true,
+  "errored": false
+}
