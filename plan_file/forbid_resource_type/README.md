@@ -21,7 +21,7 @@ function(param) {
       ],
       modules: [
         {
-          path: 'github_archive/github.com/lintnet-modules/terraform/plan_file/forbid_resource_type/main.jsonnet@0f350f659c7c64c7398249ea0fc23d1cec45c12a:v0.1.0',
+          path: 'github_archive/github.com/lintnet-modules/terraform/plan_file/forbid_resource_type/main.jsonnet@e19a09d32755d585fedbef60e97960d616688255:v0.1.0',
           config: {
             types: ['google_secret_manager_secret_version'],
           },
