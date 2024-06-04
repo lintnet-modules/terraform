@@ -2,7 +2,7 @@
 
 lintnet modules for Terraform
 
-## Modules
+## Rules
 
 - [plan_file/forbid_resource_type](plan_file/forbid_resource_type): Forbid given resource types
 
