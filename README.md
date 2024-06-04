@@ -1,6 +1,6 @@
 # terraform
 
-lintnet modules for Terraform
+lintnet module for Terraform
 
 ## Rules
 
